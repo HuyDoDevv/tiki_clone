@@ -4,13 +4,157 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/normalize.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./assets/fonts/icon/fontawesome-free-6.7.2-web/css/all.min.css">
   <link rel="stylesheet" href="./assets/css/base.css">
   <link rel="stylesheet" href="./assets/css/main.css">
   <title>Tiki</title>
 </head>
 
 <body>
-  <h1>Tiki</h1>
+  <div class="advertisement">
+    <a href="#" class="advertisement--link">
+      <div class="advertisement-content">Freeship đơn từ 45k, giảm nhiều hơn cùng</div>
+      <img src="./assets/img/header/free-ship-xtra.png" alt="Advertisement IMG" class="advertisement--img">
+    </a>
+  </div>
+
+  <div class="home-page">
+    <header class="header">
+      <div class="grid">
+        <div class="grid__row">
+          <!-- Logo -->
+          <div class="grid__column-1">
+            <div class="header__logo">
+              <a href="#" class="header__logo-link">
+                <div class="header__logo-img" style="background-image: url(./assets/img/header/logo.png);"></div>
+                <span class="header__logo-text">Tốt & Nhanh</span>
+              </a>
+            </div>
+          </div>
+          <div class="grid__column-11">
+            <!-- Wrapper chứa cả Search và Account -->
+            <div class="grid__row header__actions">
+              <!-- Search Section -->
+              <div class="grid__column-8 header__actions-search">
+                <div class="header__search-wrapper">
+                  <img src="./assets/img/header/search.png" alt="" class="header__search-img">
+                  <input type="text" class="header__search-input" placeholder="30 ngày đổi trả">
+                  <button class="header__search-button">Tìm Kiếm</button>
+                </div>
+
+                <div class="header__search-suggestions">
+                  <ul class="header__search-list">
+                    <li class="header__search-item"><a href="#" class="header__search-link">Điện gia dụng</a></li>
+                    <li class="header__search-item"><a href="#" class="header__search-link">Xe cộ</a></li>
+                    <li class="header__search-item"><a href="#" class="header__search-link">Mẹ & bé</a></li>
+                    <li class="header__search-item"><a href="#" class="header__search-link">Khoẻ đẹp</a></li>
+                    <li class="header__search-item"><a href="#" class="header__search-link">Nhà cửa</a></li>
+                    <li class="header__search-item"><a href="#" class="header__search-link">Sách</a></li>
+                    <li class="header__search-item"><a href="#" class="header__search-link">Thể thao</a></li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Account Section -->
+              <div class="grid__column-4 header__actions-account">
+                <div class="header__account">
+                  <div class="header__info">
+                    <a href="" class="header__info-link header__info-link--actice">
+                      <i class="header__info-icon fa-solid fa-house"></i>
+                      <span class="header__info-text">Trang Chủ</span>
+                    </a>
+                    <a href="" class="header__info-link">
+                      <i class="header__info-icon fa-regular fa-face-grin-wink"></i>
+                      <span class="header__info-text">Tài Khoản</span>
+                    </a>
+                  </div>
+
+                  <div class="header__cart">
+                    <a href="" class="header__cart-link header__cart-link--actice header__cart-link--separate">
+                      <i class="header__cart-icon fa-solid fa-cart-shopping"></i>
+                      <span class="header__cart-quantity">0</span>
+                    </a>
+                  </div>
+                </div>
+
+                <!-- Delivery Section -->
+                <div class="header__delivery">
+                  <a href="#" class="header__delivery-link">
+                    <i class="header__delivery-icon fa-solid fa-location-dot"></i>
+                    Giao đến:<div class="header__delivery-addres">Trần Xuân Soạn, Tân Hưng, Quận 7, Tp.HCM</div>
+                </div>
+                </a>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </header>
+
+    <div class="commitment">
+      <div class="grid">
+        <div class="gird__row">
+          <div class="commitment__warpper">
+            <div class="commitment__content">Cam kết</div>
+
+            <ul class="commitment__list">
+              <li class="commitment__item">
+                <a href="#" class="commitment__item-link commitment__item-link--separate">
+                  <img src="./assets/img/policy/authentic-product.png" alt="" class="commitment__item-img">
+                  <div class="commitment__item-text">100% hàng thật</div>
+                </a>
+              </li>
+              <li class="commitment__item">
+                <a href="#" class="commitment__item-link commitment__item-link--separate">
+                  <img src="./assets/img/policy/free-ship.png" alt="" class="commitment__item-img">
+                  <div class="commitment__item-text">Freeship mọi đơn</div>
+                </a>
+              </li>
+              <li class="commitment__item">
+                <a href="#" class="commitment__item-link commitment__item-link--separate">
+                  <img src="./assets/img/policy/refund.png" alt="" class="commitment__item-img">
+                  <div class="commitment__item-text">Hoàn 200% nếu hàng giả</div>
+                </a>
+              </li>
+              <li class="commitment__item">
+                <a href="#" class="commitment__item-link commitment__item-link--separate">
+                  <img src="./assets/img/policy/return.png" alt="" class="commitment__item-img">
+                  <div class="commitment__item-text">30 ngày đổi trả</div>
+                </a>
+              </li>
+              <li class="commitment__item">
+                <a href="#" class="commitment__item-link commitment__item-link--separate">
+                  <img src="./assets/img/policy/fast-delivery.png" alt="" class="commitment__item-img">
+                  <div class="commitment__item-text">Giao nhanh 2h</div>
+                </a>
+              </li>
+              <li class="commitment__item">
+                <a href="#" class="commitment__item-link">
+                  <img src="./assets/img/policy/cheap.png" alt="" class="commitment__item-img">
+                  <div class="commitment__item-text">Giá siêu rẻ</div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="home-main">
+      <div class="grid"></div>
+    </div>
+    <footer>
+      <div class="grid"></div>
+    </footer>
+  </div>
 
 </body>
 <script src="./assets/javascript/main.js"></script>
