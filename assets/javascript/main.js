@@ -25,7 +25,6 @@ list.addEventListener('transitionend', () => {
 document.querySelector('.slideshow__action-left').onclick = () => updateSlide(--index);
 document.querySelector('.slideshow__action-right').onclick = () => updateSlide(++index);
 
-
 // Chấm trang
 dots.forEach((dot, i) => dot.onclick = () => updateSlide(index = i + 1));
 

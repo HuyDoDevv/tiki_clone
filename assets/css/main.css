@@ -388,6 +388,11 @@ categories::-webkit-scrollbar {
 /* End Main CSS */
 
 /* Home Content Css */
+.home__content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
 
 .slideshow {
   background-color: white;
@@ -461,5 +466,64 @@ categories::-webkit-scrollbar {
   width: 30px;
   background-color: var(--primary-color);
 }
+
+
+.top__deal {
+  padding: 16px;
+  background-color: white;
+  border-radius: 8px;
+}
+
+.top__deal-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+}
+
+.top__deal-item {
+  list-style: none;
+  padding: 10px 0px;
+  border-radius: 8px;
+}
+
+.top__deal-item:hover {
+  background-color: rgba(39, 39, 42, 0.12);
+}
+
+
+.top__deal-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-width: 100px;
+}
+
+.top__deal-img {
+  width: 44px;
+  height: 44px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+
+.top__deal-item:first-child .top__deal-text {
+  color: red;
+}
+
+
+.top__deal-text {
+  font-size: 1.4rem;
+  padding-top: 10px;
+  max-width: 100px;
+  white-space: wrap;
+  color: rgb(39, 39, 42);
+  font-weight: 400;
+}
+
 
 /* End Home Content Css */
