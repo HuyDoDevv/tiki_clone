@@ -333,6 +333,7 @@
   overflow-y: scroll;
   -ms-overflow-style: none;
   scrollbar-width: none;
+  padding-bottom: 100px;
 }
 
 caterories::-webkit-scrollbar {
