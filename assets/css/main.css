@@ -316,8 +316,6 @@
 
 
 /* Main CSS */
-
-
 .main {
   background-color: #f5f5fa;
 }
@@ -326,7 +324,7 @@
   padding-top: 16px;
 }
 
-.caterories {
+.categories {
   position: sticky;
   top: 20px;
   max-height: 100vh;
@@ -336,18 +334,18 @@
   padding-bottom: 100px;
 }
 
-caterories::-webkit-scrollbar {
+categories::-webkit-scrollbar {
   display: none;
 }
 
-.caterory {
+.category {
   padding: 12px 8px;
   background-color: white;
   border-radius: 8px;
   margin-bottom: 16px;
 }
 
-.caterory__heading {
+.category__heading {
   font-weight: 700;
   font-size: 1.4rem;
   color: rgb(39, 39, 42);
@@ -355,7 +353,7 @@ caterories::-webkit-scrollbar {
   padding-left: 16px;
 }
 
-.caterory__list {
+.category__list {
   display: flex;
   flex-direction: column;
   margin: 0;
@@ -364,9 +362,7 @@ caterories::-webkit-scrollbar {
   overflow-y: auto;
 }
 
-.caterory__item {}
-
-.caterory__item-link {
+.category__item-link {
   display: flex;
   padding: 7px 16px;
   align-items: center;
@@ -378,20 +374,92 @@ caterories::-webkit-scrollbar {
   border-radius: 8px;
 }
 
-.caterory__item-link:hover {
+.category__item-link:hover {
   background-color: rgba(39, 39, 42, 0.12);
 }
 
-.caterory__item-img {
+.category__item-img {
   width: 32px;
   height: 32px;
   background-size: contain;
   background-repeat: no-repeat;
 }
 
+/* End Main CSS */
 
-.fffffff {
-  height: 500vh;
+/* Home Content Css */
+
+.slideshow {
+  background-color: white;
+  border-radius: 8px;
+  padding: 16px;
 }
 
-/* End Main CSS */
+.slideshow__wrapper {
+  overflow: hidden;
+  position: relative;
+}
+
+.slideshow__list {
+  display: flex;
+  justify-content: space-between;
+  transition: 0.5s ease;
+}
+
+.slideshow__wrapper:hover .slideshow__action {
+  display: flex;
+}
+
+.slideshow__item {
+  flex-shrink: 0;
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.slideshow__item-link {
+  width: 50%;
+}
+
+.slideshow__item--img {
+  background-size: cover;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.slideshow__action {
+  position: absolute;
+  top: 45%;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0px 10px;
+  display: none;
+}
+
+.slideshow__action-icon {
+  font-size: 1.8rem;
+  color: var(--primary-color);
+}
+
+.pagation {
+  text-align: center;
+}
+
+.pagation__dot {
+  cursor: pointer;
+  height: 2px;
+  width: 20px;
+  margin: 0 2px;
+  background-color: #bbb;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.pagation__dot--active {
+  width: 30px;
+  background-color: var(--primary-color);
+}
+
+/* End Home Content Css */
