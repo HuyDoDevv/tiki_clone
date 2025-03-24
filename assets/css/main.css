@@ -526,4 +526,190 @@ categories::-webkit-scrollbar {
 }
 
 
+
+.top__cheap {
+  background-color: white;
+  border-radius: 8px;
+}
+
+.top__cheap-container {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+
+.top__cheap-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top__cheap-logo {
+  max-width: 200px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.top__cheap-all {
+  text-decoration: none;
+  color: rgb(10, 104, 255);
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+
+.top__cheap-wrapper {
+  overflow: hidden;
+  position: relative;
+}
+
+.top__cheap-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  transition: 0.5s ease;
+  gap: 8px;
+}
+
+.top__cheap-item {
+  border: 1px solid rgb(235, 235, 240);
+  border-radius: 8px;
+  flex-shrink: 0;
+  max-width: calc(100% / 6 - 8px)
+}
+
+.top__cheap-item-link {
+  text-decoration: none;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.top__cheap-item:hover {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 20px;
+  opacity: 0.95;
+}
+
+.top__cheap-item-img {
+  padding-top: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.top__cheap-item-label {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  max-width: 176px;
+}
+
+.top__cheap-item-date {
+  position: absolute;
+  top: 6px;
+  left: 10px;
+  background-color: rgb(217, 56, 67);
+  border: 1px solid rgb(255, 255, 255);
+  color: white;
+  font-size: 1rem;
+  font-weight: 300;
+  padding: 2px 4px;
+  border-radius: 8px;
+}
+
+.top__cheap-item-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.top__cheap-item-info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.top__cheap-item-content {
+  font-size: 1.2rem;
+  font-weight: 400;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  color: #27272a;
+}
+
+.top__cheap-item-price {
+  color: rgb(255, 66, 78);
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.top__cheap-item-price span {
+  font-size: 1.2rem;
+  vertical-align: text-top;
+  text-decoration: underline;
+}
+
+.top__cheap-item-discount {
+  display: inline-block;
+}
+
+.top__cheap-item-discount-percent {
+  padding: 0 4px;
+  background-color: #f5f5fa;
+  border-radius: 8px;
+  color: black;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.top__cheap-item-price-discounted {
+  color: #808089;
+  font-size: 1rem;
+  text-decoration: line-through;
+}
+
+.top__cheap-item-price-discounted span {
+  vertical-align: text-bottom;
+  text-decoration: underline;
+}
+
+
+.top__cheap-item-delivery-date {
+  border-top: 1px solid rgb(235, 235, 240);
+  padding-top: 8px;
+  color: #808089;
+}
+
+.top__cheap-item-rateting {
+  font-size: 1.2rem;
+  color: rgb(255, 196, 0);
+}
+
+.top__cheap-btn--left {
+  position: absolute;
+  left: 1%;
+  top: 35%;
+  display: none;
+}
+
+.top__cheap-btn--right {
+  position: absolute;
+  right: 1%;
+  top: 35%;
+}
+
+.top__cheap-btn {
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 8px;
+}
+
 /* End Home Content Css */
