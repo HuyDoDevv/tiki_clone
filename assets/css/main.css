@@ -941,6 +941,8 @@ categories::-webkit-scrollbar {
   background-color: white;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  position: sticky;
+  top: 20px;
 }
 
 .today__suggestion-heading {
@@ -1016,6 +1018,6 @@ categories::-webkit-scrollbar {
 /* End Home Content Css */
 
 
-.main {
+.today__suggestion-content {
   height: 500vh;
 }
