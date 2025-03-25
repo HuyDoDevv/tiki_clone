@@ -909,4 +909,113 @@ categories::-webkit-scrollbar {
 }
 
 
+.promotion {
+  background-color: white;
+  border-radius: 10px;
+}
+
+.promotion__wrapper {
+  padding: 16px;
+}
+
+.promotion-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-auto-flow: row;
+  gap: 12px;
+}
+
+.promotion-img {
+  padding-top: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+
+.today__suggestion-header {
+  background-color: white;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.today__suggestion-heading {
+  font-size: 2rem;
+  font-weight: 500;
+  color: rgb(255, 66, 78);
+  padding: 16px;
+}
+
+
+.today__suggestion-list {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+}
+
+.today__suggestion-item-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  gap: 10px;
+  padding: 14px;
+  border: none;
+  border-bottom: 1px solid rgba(128, 128, 137, 0.12);
+  cursor: pointer;
+  outline: none;
+  background-color: white;
+  transition: all 0.3s ease;
+  opacity: 0.8;
+}
+
+.today__suggestion-item-link:hover {
+  background-color: rgba(128, 128, 137, 0.12);
+}
+
+.today__suggestion-item-link--active {
+  border: none;
+  opacity: 1;
+  background-color: rgba(0, 96, 255, 0.05);
+  border-bottom: 1px solid rgb(10, 104, 255);
+}
+
+.today__suggestion-item-link--active:hover {
+  background-color: rgba(0, 96, 255, 0.12);
+}
+
+.today__suggestion-item-img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 44px;
+  height: 44px;
+}
+
+.today__suggestion-item-text {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: rgb(128, 128, 137);
+  text-transform: capitalize;
+}
+
+.today__suggestion-item-text--active {
+  color: rgb(10, 104, 255);
+}
+
+.today__suggestion-content {
+  background-color: white;
+  margin-top: 16px;
+  padding: 16px;
+  border-radius: 10px;
+}
+
 /* End Home Content Css */
+
+
+.main {
+  height: 500vh;
+}
