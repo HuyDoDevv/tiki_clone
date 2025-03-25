@@ -578,16 +578,16 @@ categories::-webkit-scrollbar {
   border: 1px solid rgb(235, 235, 240);
   border-radius: 8px;
   flex-shrink: 0;
-  max-width: calc(100% / 6 - 8px)
+  width: calc(100% / 6 - 8px);
 }
 
 .top__cheap-item-link {
   text-decoration: none;
-  padding: 8px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 16px;
+  height: 100%;
 }
 
 .top__cheap-item:hover {
@@ -627,6 +627,8 @@ categories::-webkit-scrollbar {
   flex-direction: column;
   justify-content: space-between;
   gap: 20px;
+  flex-grow: 1;
+  padding: 0 8px;
 }
 
 .top__cheap-item-info-container {
@@ -645,18 +647,19 @@ categories::-webkit-scrollbar {
   text-overflow: ellipsis;
   -webkit-line-clamp: 2;
   color: #27272a;
+  height: calc(1.2em * 2);
+}
+
+.top__cheap-item-price--nondiscounted {
+  color: rgb(39, 39, 42);
+  font-size: 1.6rem;
+  font-weight: 700;
 }
 
 .top__cheap-item-price {
   color: rgb(255, 66, 78);
   font-size: 1.6rem;
   font-weight: 700;
-}
-
-.top__cheap-item-price span {
-  font-size: 1.2rem;
-  vertical-align: text-top;
-  text-decoration: underline;
 }
 
 .top__cheap-item-discount {
@@ -678,15 +681,9 @@ categories::-webkit-scrollbar {
   text-decoration: line-through;
 }
 
-.top__cheap-item-price-discounted span {
-  vertical-align: text-bottom;
-  text-decoration: underline;
-}
-
-
 .top__cheap-item-delivery-date {
   border-top: 1px solid rgb(235, 235, 240);
-  padding-top: 8px;
+  padding: 8px 0;
   color: #808089;
 }
 
@@ -710,6 +707,142 @@ categories::-webkit-scrollbar {
 
 .top__cheap-btn {
   box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 8px;
+}
+
+
+.flash__sale-container {
+  background-color: white;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.flash__sale-heading {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flash__sale-logo {
+  font-size: 2rem;
+  text-decoration: none;
+  color: rgb(255, 66, 78);
+  font-weight: 500;
+}
+
+.flash__sale-all {
+  text-decoration: none;
+  color: rgb(10, 104, 255);
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+
+.flash__sale-content {
+  padding-top: 12px;
+  overflow: hidden;
+  position: relative;
+}
+
+.flash__sale-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 16px;
+}
+
+.flash__sale-item {
+  width: calc(100% / 6 - 16px);
+  flex-shrink: 0;
+}
+
+.flash__sale-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  gap: 8px;
+}
+
+.flash__sale-link:hover .flash__sale-img {
+  opacity: 0.95;
+}
+
+.flash__sale-img {
+  width: 100%;
+  padding-top: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.flash__sale-discount {
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  color: rgb(255, 66, 78);
+  background-color: rgb(255, 219, 222);
+  padding: 2px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  border-radius: 4px;
+}
+
+.flash__sale-price {
+  color: rgb(255, 66, 78);
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.flash__sale-sell {
+  width: 90%;
+  height: 16px;
+  background-color: rgb(255, 170, 175);
+  border-radius: 10px;
+  position: relative;
+}
+
+.flash__sale-sell-progress {
+  position: absolute;
+  background-color: rgb(255, 66, 78);
+  height: 100%;
+  border-radius: 10px;
+}
+
+.flash__sale-sell-quantity {
+  color: rgb(255, 255, 255);
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.flash__sale-sell-img {
+  position: absolute;
+  height: 30px;
+  width: 24px;
+  top: -10px;
+  left: 4px;
+}
+
+.flash__sale-btn {
+  position: absolute;
+  top: 40%;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 8px;
+}
+
+.flash__sale-btn--left {
+  margin-left: 10px;
+  left: 0;
+  display: none;
+}
+
+.flash__sale-btn--right {
+  margin-right: 10px;
+  right: 0;
 }
 
 /* End Home Content Css */

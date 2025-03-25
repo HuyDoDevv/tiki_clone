@@ -115,3 +115,17 @@ html {
   background-color: white;
   cursor: pointer;
 }
+
+/* Curency */
+
+
+.curency {
+  font-size: 1.2rem;
+  vertical-align: text-top;
+  text-decoration: underline;
+}
+
+.curency-discounted {
+  vertical-align: text-bottom;
+  text-decoration: underline;
+}
