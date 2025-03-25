@@ -73,3 +73,36 @@ function scrollFlashSale (direction) {
   btnLeft.style.display = currentPageFlashSale === 1 ? 'none' : 'block';
   btnRight.style.display = currentPageFlashSale === pages ? 'none' : 'block';
 }
+
+
+let currentPageFamousBrand = 1;
+let totalTranslateXFamousBrand = 0;
+let countSlides = document.querySelectorAll('.famous__brand-item').length;
+
+function scrollFamousBrand(direction) {
+  let translateStep = 0;
+  const list = document.querySelector('.famous__brand-list');
+  const slides = document.querySelectorAll('.famous__brand-item');
+  const totalSlides = slides.length;
+  const btnLeft = document.querySelector('.famous__brand-btn--left');
+  const btnRight = document.querySelector('.famous__brand-btn--right');
+  const itemOfPage = 6;
+  const pages = Math.ceil(slides.length / itemOfPage);
+
+  if (direction == 'next') {
+    translateStep = (countSlides - itemOfPage) < itemOfPage ? (100 / itemOfPage) * Math.abs(countSlides - itemOfPage) : 100;
+    countSlides -= (countSlides - itemOfPage) < itemOfPage ? Math.abs(countSlides - itemOfPage) : itemOfPage;
+    totalTranslateXFamousBrand += -translateStep;
+    currentPageFamousBrand += 1;
+  } else {
+    translateStep = (countSlides + itemOfPage) < totalSlides ? 100 : (100 / itemOfPage) * Math.abs(totalSlides - countSlides);
+    countSlides += (countSlides + itemOfPage) < totalSlides ? itemOfPage : Math.abs(totalSlides - countSlides);
+    totalTranslateXFamousBrand += translateStep;
+    currentPageFamousBrand += -1;
+  }
+
+  list.style.transition = "0.5s ease";
+  list.style.transform = `translateX(${totalTranslateXFamousBrand}%)`;
+  btnLeft.style.display = currentPageFamousBrand === 1 ? 'none' : 'block';
+  btnRight.style.display = currentPageFamousBrand === pages ? 'none' : 'block';
+}
