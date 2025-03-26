@@ -1026,8 +1026,8 @@ categories::-webkit-scrollbar {
 }
 
 .today__suggestion-item-text {
-  font-size: 1.4rem;
-  font-weight: 400;
+  font-size: 1.3rem;
+  font-weight: 500;
   color: rgb(128, 128, 137);
   text-transform: capitalize;
 }
@@ -1174,6 +1174,10 @@ categories::-webkit-scrollbar {
   color: rgb(255, 66, 78);
 }
 
+.today__suggestion-content-price--non-discount {
+  color: rgb(39, 39, 42);
+}
+
 .today__suggestion-content-price-discounted {
   display: inline-block;
 }
@@ -1183,7 +1187,7 @@ categories::-webkit-scrollbar {
   color: black;
   font-weight: 500;
   background-color: #f5f5fa;
-  padding: 2px 4px;
+  padding: 2px 6px;
   border-radius: 8px;
 }
 
@@ -1191,7 +1195,7 @@ categories::-webkit-scrollbar {
   font-size: 1rem;
   color: #808089;
   text-decoration-line: line-through;
-  vertical-align: super;
+  vertical-align: text-bottom;
 }
 
 .today__suggestion-content-delivery {
@@ -1201,9 +1205,37 @@ categories::-webkit-scrollbar {
   font-size: 1rem;
 }
 
+.today__suggestion-content-see-more {
+  margin-top: 12px;
+  color: rgb(10, 104, 255);
+  text-align: center;
+}
+
+.today__suggestion-content-see-more span {
+  cursor: pointer;
+  display: inline-block;
+  width: 240px;
+  margin-top: 12px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: 1px solid rgb(10, 104, 255);
+  color: rgb(10, 104, 255);
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.today__suggestion-content-see-more:hover span {
+  background-color: rgba(0, 96, 255, 0.12) !important;
+}
+
 /* End Home Content Css */
 
 
 .today__suggestion-content {
-  height: 200vh;
+  padding-bottom: 50px;
+}
+
+
+.home__content {
+  height: 1000vh;
 }
