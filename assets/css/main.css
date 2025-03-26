@@ -1036,6 +1036,10 @@ categories::-webkit-scrollbar {
   color: rgb(10, 104, 255);
 }
 
+.today__suggestion-content {
+  padding-bottom: 50px;
+}
+
 .today__suggestion-content-list {
   margin: 0;
   padding: 0;
@@ -1231,11 +1235,215 @@ categories::-webkit-scrollbar {
 /* End Home Content Css */
 
 
-.today__suggestion-content {
-  padding-bottom: 50px;
+/* Footer CSS */
+
+.footer__container {
+  background-color: white;
+  border-radius: 10px;
+  padding-bottom: 20px;
+}
+
+.footer__main {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  font-size: 1.2rem;
+  padding: 16px;
+}
+
+.footer__item-link {
+  display: inline;
+}
+
+.customer__support,
+.about__tiki,
+.fotter__cooperation {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer__link {
+  text-decoration: none;
+  color: rgb(128, 128, 137);
+}
+
+.footer__heading {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 500;
+  color: rgb(56, 56, 61);
+}
+
+.footer__heading-mini {
+  font-size: 1.2rem;
+  line-height: 24px;
+  font-weight: 400;
+  color: rgb(56, 56, 61);
+  padding: 0;
+  margin: 0;
+}
+
+.customer__support p {
+  margin: 0;
+}
+
+.footer__link:hover {
+  text-decoration: underline;
+}
+
+.footer__link--actice {
+  color: black;
+  text-decoration: none;
+}
+
+.customer__support p {
+  color: rgb(128, 128, 137);
+}
+
+.footer__link--actice:hover {
+  text-decoration: underline;
+}
+
+.fotter__cooperation {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.certification__label {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.certification__img {
+  background-size: cover;
+  max-height: 32px;
+}
+
+.footer__delivery-img {
+  background-size: cover;
+  max-height: 32px;
+}
+
+.footer__delivery-link:hover {
+  opacity: 0.9;
+}
+
+.fotter__connect--social {
+  display: flex;
+  gap: 16px;
+}
+
+.fotter__connect-icon-fb {
+  color: rgb(11, 116, 229);
+}
+
+.fotter__connect-icon-yb {
+  color: rgb(243 2 4);
+}
+
+.fotter__connect-icon-lk {
+  color: rgb(49 113 246);
+}
+
+.fotter__connect-icon-in {
+  color: rgb(235 135 59);
 }
 
 
-.home__content {
-  height: 1000vh;
+.fotter__connect-icon {
+  font-size: 2.4rem;
+}
+
+.fotter__download-list {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.fotter__download--qr {
+  width: 80px;
+  height: auto;
+}
+
+.fotter__download-app {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.fotter__download-app-img {
+  width: 122px;
+  height: auto;
+}
+
+/* End Footer CSS */
+
+
+.download-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.qrcode {
+  width: 80px;
+  /* Điều chỉnh kích thước QR Code */
+  height: auto;
+}
+
+.download-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.download-button img {
+  width: 140px;
+  /* Điều chỉnh kích thước nút tải */
+  height: auto;
+}
+
+.company__tiki {
+  padding: 16px;
+  border-top: 1px solid rgba(128, 128, 137, 0.5);
+}
+
+.company__tiki p {
+  font-size: 1.2rem;
+  padding: 0;
+  color: rgb(128, 128, 137);
+}
+
+.company__tiki a {
+  text-decoration: none;
+}
+
+.tiki__policy {
+  padding: 16px;
+  border-top: 1px solid rgba(128, 128, 137, 0.5);
+}
+
+.tiki__policy a {
+  text-decoration: none;
+  color: blue;
+}
+
+.company__tiki a:hover {
+  text-decoration: underline;
+}
+
+.tiki__policy a:hover {
+  text-decoration: underline;
+}
+
+.tiki__policy p {
+  margin: 0;
+  color: rgb(128, 128, 137);
+  font-size: 1.2rem;
 }

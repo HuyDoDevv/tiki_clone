@@ -52,8 +52,6 @@ function scrollTopDeal(direction) {
   btnRight.style.display = currentPageTopDeal === pages ? 'none' : 'block';
 }
 
-
-
 let currentPageFlashSale = 1;
 let totalTranslateXFlashSale = 0;
 
@@ -111,3 +109,19 @@ window.addEventListener("scroll", () => {
   document.querySelector(".today__suggestion-wrapper")
     .classList.toggle("is-sticky", window.scrollY >= document.querySelector(".today__suggestion-wrapper").offsetTop);
 });
+
+
+function openTodaySuggestionPage(namePage) {
+  // Ẩn tất cả nội dung
+  document.querySelectorAll('.today__suggestion-content-page').forEach(el => el.style.display = "none");
+  document.getElementById(namePage).style.display = "block";
+  // Xóa class active của tất cả button
+  document.querySelector('.today__suggestion-item-link--active').className = 'today__suggestion-item-link';
+  document.querySelector('.today__suggestion-item-text--active').className = 'today__suggestion-item-text';
+  // Thêm class active cho button được click
+  const clickedButton = document.querySelector(`[onclick="openTodaySuggestionPage('${namePage}')"]`);
+  clickedButton.classList.add('today__suggestion-item-link--active');
+  clickedButton.querySelector('.today__suggestion-item-text').classList.add('today__suggestion-item-text--active');
+  // Cuộn mượt
+  document.querySelector('.today__suggestion').scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
