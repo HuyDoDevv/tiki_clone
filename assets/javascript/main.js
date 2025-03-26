@@ -106,3 +106,8 @@ function scrollFamousBrand(direction) {
   btnLeft.style.display = currentPageFamousBrand === 1 ? 'none' : 'block';
   btnRight.style.display = currentPageFamousBrand === pages ? 'none' : 'block';
 }
+
+window.addEventListener("scroll", () => {
+  document.querySelector(".today__suggestion-wrapper")
+    .classList.toggle("is-sticky", window.scrollY >= document.querySelector(".today__suggestion-wrapper").offsetTop);
+});
